@@ -14,7 +14,7 @@
 
 ### ping-jiao
 
-实现评教功能，代码来源于大神 @linjinjin123（https://github.com/linjinjin123）的一个一键评教脚本，但是因为现在已经不能用了，所以个人作了一些微小的改动。
+实现评教功能，代码来源于大神 @linjinjin123(https://github.com/linjinjin123) 的一个一键评教脚本，但是因为现在已经不能用了，所以个人作了一些微小的改动。
 
 usage: python ping-jiao.py
 
