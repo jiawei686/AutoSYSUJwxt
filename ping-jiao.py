@@ -14,7 +14,7 @@ import os
 import json
 from StringIO import StringIO
 
-import demjson
+import demjson 
 import getpass
 
 from base import BaseHandler
@@ -286,7 +286,7 @@ class PingJiao(BaseHandler):
         return questionList
 
 if __name__ == "__main__":
-    debug = True
+    debug = False
     os.system("cls")
     print '============================================================================'
     print '                                                                            '
@@ -312,10 +312,10 @@ if __name__ == "__main__":
     else:
         year = raw_input('Please input year(The format is 2016-2017)\n')
         term = raw_input('Please input the number of semester: \n1.first \n2.second \n3.third\n')
+        pingjiao = PingJiao(year, term)
         if pingjiao.have_login == False:
             username = raw_input('Please input your NetID:')
             password = getpass.getpass('Please input your Password:')    
-    pingjiao = PingJiao(year, term)
     pingjiao.login(username, password)
     pingjiao.run()
     print u'程序运行结束，是否成功请登陆教务系统查看'

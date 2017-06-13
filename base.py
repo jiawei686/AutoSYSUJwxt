@@ -1,4 +1,6 @@
 #coding:utf-8
+import sys
+
 import requests
 from lxml import etree
 
@@ -26,4 +28,5 @@ class BaseHandler(object):
             print 'login success.'
         else:
             print 'login failure.'
+            sys.exit(0)
 
